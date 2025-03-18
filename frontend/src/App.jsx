@@ -5,7 +5,7 @@ function App() {
     const [message, setMessage] = useState("Loading...");
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/test")
+        fetch("https://testing-d81w1lbes-amit-chauhans-projects-c077ecc9.vercel.app/api/test")
             .then((res) => res.json())
             .then((data) => setMessage(data.message))
             .catch(() => setMessage("Error fetching data"));
